@@ -1,0 +1,115 @@
+:root{
+    --bg1: url("clear_sun.jpg");
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+    overflow:hidden;
+    min-height: 100vh;
+    background-image: var(--bg1);
+    background-size: cover;
+    color: white;
+    backdrop-filter: blur(10px);
+}
+header{
+    text-align: center;
+    transition: all 1s steps(3);
+}
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    width:550px;
+    height:550px;
+    margin: 0 auto;
+    background-image: var(--bg1);
+    background-size: cover;
+    background-position: center;
+    
+}
+.weather-input{
+    position: absolute;
+    top:20px;
+    left:16%;
+}
+.weather-input input{
+    width:350px;
+    font-size: 1.05rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 50px;
+    outline: none;
+    opacity: 1;
+}
+.weather-input input:hover{
+    scale: 1.01;
+}
+.weather-input button{
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+}
+.weather-input button i{
+    font-size: 17px;
+    font-weight: bold;
+    transform:translateY(1.5px);
+}
+.weather-input button:hover{
+    scale: 1.02;
+    background-color: rgb(10, 145, 198);
+}
+.display{
+    position:absolute;
+    top:95px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+.weather-symbol{
+    position: static;
+    width: 360px;
+    height:360px;
+}
+.weather-symbol img{
+    width: 300px;
+    height:300px;
+    margin:0 auto;
+    transform:translate(25px,100px);
+
+}
+.weather-details {
+    display: grid;
+    grid-template-columns: repeat(2, 220px);
+    justify-content: center;
+    gap: 20px;
+}
+.weather-details > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 220px;
+}
+.weather-details img {
+    width: 70px;
+    height: 70px;
+}
+.details {
+    display: flex;
+    flex-direction: column;
+}
+.details span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.details p {
+    margin: 0;
+    font-size: 1.1rem;
+}

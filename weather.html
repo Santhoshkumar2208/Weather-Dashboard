@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <h1>WEATHER DASHBOARD</h1>
+    </header>
+    <div class="container">
+        <div class="weather-input">
+            <input class="city" placeholder="Enter The City">
+            <button type="submit" id="search"><i class="bx bx-search"></i></button>
+        </div>
+        <div class="display"><span>Chennai</span></div>
+        <div class="weather-symbol">
+            <img src="https://cdn.meteocons.com/3.0.0-next.10/svg/fill/mostly-clear-day.svg" alt="Weather-icon">
+        </div>
+        <div class="weather-details">
+            <div class="temperature">
+                <img src="https://cdn.meteocons.com/3.0.0-next.10/svg/fill/thermometer.svg">
+                <div class="details">
+                    <span id="t_value">0</span>
+                    <p>Temperature</p>
+                </div>
+            </div>
+            <div class="Humidity">
+                <img src="https://cdn.meteocons.com/3.0.0-next.10/svg/fill/humidity.svg">
+                <div class="details">
+                    <span id="h_value">0</span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="Pressure">
+                <img src="https://cdn.meteocons.com/3.0.0-next.10/svg/fill/barometer.svg">
+                <div class="details">
+                    <span id="p_value">0</span>
+                    <p>Pressure</p>
+                </div>
+            </div>
+            <div class="Wind">
+                <img src="https://cdn.meteocons.com/3.0.0-next.10/svg/fill/wind.svg">
+                <div class="details">
+                    <span id="w_value">0</span>
+                    <p>Wind</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="weather.js"></script>
+</body>
+</html>
