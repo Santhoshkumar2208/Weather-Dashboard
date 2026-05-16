@@ -29,7 +29,7 @@ const iconMap = {
 };
 
 async function weather(val){
-    const api_key = '6effdae378ba4ad72a9b34066c248c74';
+    const api_key = 'Enter your API KEY';
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${val}&appid=${api_key}&units=metric`;;
     const data = await fetch(url);
     const res = await data.json();
@@ -39,9 +39,10 @@ async function weather(val){
     p_value.textContent = (res.main.pressure) + ' hPa';
     w_value.textContent = res.wind.speed + ' Km/Hr';
     const icon = res.weather[0].icon;
+    let meto;
     if (iconMap[icon]) {
         meto = iconMap[icon];
-    } 
+    }
     else {
         meto = 'cloudy';
     }
